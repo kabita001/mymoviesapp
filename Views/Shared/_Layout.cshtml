@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css"
+          href="~/lib/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+  <div class="container">
+      <div>
+              <a asp-controller="Home" asp-action="Index">Movies</a>
+              <a asp-controller="Genres" asp-action="Index">Genres</a>
+           
+      </div>
+      <header class="jumbotron">
+          <h1>My Movies</h1>
+      </header>
+      @RenderBody()
+  </div>
+  @RenderSection(name: "Scripts", required: false);
+</body>
+</html>
