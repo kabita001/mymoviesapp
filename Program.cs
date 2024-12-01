@@ -40,3 +40,5 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}/{slug?}");
 
 app.Run();
+
+// "MovieContext": "Server=KABITA;Database=MoviesExercise;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;"
